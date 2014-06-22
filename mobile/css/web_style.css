@@ -1,0 +1,71 @@
+.font6{ font-size: 20px; font-weight: bold;}
+.font4{ font-size: 16px; font-weight: bold;}
+.font2{font-size: 12px;}
+.font1{font-size: 11px;}
+.form_tag {margin: 1px; padding: 1px; font-family: Arial, Tahoma, sans-serif;  font-size: 11px;}
+.search_button {font-family: Arial, Tahoma, sans-serif;  font-size: 11px;}
+.header_center {TEXT-ALIGN:center;}
+.header_right {TEXT-ALIGN:right;}
+.header_left {TEXT-ALIGN:left;}
+a {	text-decoration: none;}
+.content img {	float: left;	margin-right: 5px;	margin-top: 3px;	margin-left: 2px;}
+.homeng {
+	background-color: #CCCCCC;
+	margin: 0px;
+	border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFFFFF;
+	border-bottom-color: #333333;
+	padding: 2px;
+}
+body { background-color: #ffffff;  color: black;  font-family: Arial, Tahoma, sans-serif;  font-size: 8pt;  margin: 0px;  border: 0px;  padding: 0px;}
+.header  {	background-color: #3366CC;	color: #FFFFFF;	font-size: 18px;	font-weight: bold;	font-family: Arial, Helvetica, sans-serif;	padding: 5px 0px 5px 2px;	margin: 0px;}
+.footer  {	color: #FFFFFF;	background-color: #3366CC;	font-family: Arial, Helvetica, sans-serif;	font-size: 11px;	font-weight: normal;	padding: 2px 0px 3px 3px;	margin: 0px;}
+.accesskey {
+	text-decoration: none;
+	font-size: 11px;
+	color: #FFFFFF;
+	background-color: #3366CC;
+	margin: 0px;
+	border: 1px solid #3366CC;
+	padding: 0px 3px 0px 3px;
+}
+.himgicon {	height: 12px;	width: 7px;}
+.pgheader {
+	color: #003366;
+	font-size: 11px;
+	font-weight: normal;
+	padding: 1px 0px 1px 3px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #FFFFFF;
+	margin: 0px;
+	border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #3366CC;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-left-color: #333333;
+}
+.footerng {	background-color: #FFFFFF; color: #003366;	font-size: 11px;	font-weight: normal;	font-family: Arial, Helvetica, sans-serif;	padding: 1px 1px 1px 3px;	margin: 0px;	border-top-width: 1px;	border-right-width: 0px;	border-bottom-width: 1px;	border-left-width: 0px;	border-top-style: solid;	border-right-style: solid;	border-bottom-style: solid;	border-left-style: solid;	border-top-color: #FFFFFF;	border-right-color: #3366CC;	border-bottom-color: #3366CC;	border-left-color: #3366CC;}
+/* Design11 Style6 */
+/* Editor Styles listed below */
+.Heading {font-family: Arial, Tahoma, sans-serif; font-size: 13px;	font-weight: bold; color: #000000; text-decoration: none;	margin: 0px; padding: 0px;}
+.BodyText { font-weight: normal; font-size: 8pt; padding: 0px 2px 0px 2px; MARGIN: 0px;}
+.BoldText {	font-weight: bold;	font-size: 11px;}
+.Italic {font-style: italic;}
+.Underline {text-decoration: underline;}
+.Indent {	margin-top: 0px;	margin-right: 0px;	margin-bottom: 0px;	margin-left: 5px;}
+.Highlight {	background-color: #CCCCCC;	border-top-width: 0px;	border-right-width: 0px;	border-bottom-width: 0px;	border-left-width: 0px;	border-top-style: none;	border-right-style: none;	border-bottom-style: none;	border-left-style: none;	padding: 2px 0px 0px 0px;	margin: 2px;}
+.Line_HR {clear:both;	border-bottom-color:#3366CC; border-top-color:#ffffff;	border-left-color:#ffffff; border-right-color:#ffffff;	border-top-width: 1px;	border-right-width: 1px;	border-bottom-width: 1px;	border-left-width: 1px;	border-top-style: solid;	border-right-style: solid;	border-bottom-style: solid;	border-left-style: solid;	padding: 0px;	margin: 0px;}

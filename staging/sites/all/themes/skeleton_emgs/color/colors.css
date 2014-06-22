@@ -1,0 +1,26 @@
+body { color:#000000; }
+
+a:link, a:visited,
+	color:#3253ad;
+}
+a:hover { text-decoration: none; border-bottom: 1px dotted #999; }
+
+
+a:hover, a:active, a:focus { color:#000000; }
+
+h1, h2, h3, h4, h5, h6 { color:#3253ad; }
+
+#header #site-name a { color:#3253ad; }
+
+#header #site-name a:hover { color: #262626; }
+
+#header #site-slogan { color: #000000; }
+
+body { border-color:#375199; }
+
+#wrap { border-color:#4565be; }
+
+#admin-menu a:link, #admin-menu a:visited, #admin-menu #navigation ul li a, #admin-menu #navigation ul.sf-menu li a {
+	color: #ffffff;
+	text-shadow: none;
+}

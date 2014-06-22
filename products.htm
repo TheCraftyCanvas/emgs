@@ -1,0 +1,1463 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+<head>
+<LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA="screen,projection,print">
+
+<title>Eureka Metal &amp; Glass Services, Inc.- Products &amp; Services</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+
+
+<script>
+
+
+
+// (C) 2000 www.CodeLifter.com
+
+// http://www.codelifter.com
+
+// Free for all users, but leave in this  header
+
+
+
+// =======================================
+
+// set the following variables
+
+// =======================================
+
+
+
+// Set speed (milliseconds)
+
+var speed = 4500
+
+var speed2 = 4900
+
+
+
+// Specify the image files
+
+var Pic_sf = new Array() // don't touch this
+
+// to add more images, just continue
+
+// the pattern, adding to the array below
+
+Pic_sf[0] = 'images/fixed-storefront1_thumb.jpg'
+
+Pic_sf[1] = 'images/fixed-storefront2_thumb.jpg'
+
+Pic_sf[2] = 'images/fixed-storefront3_thumb.jpg'
+
+Pic_sf[3] = 'images/newcity-clerestory_thumb.jpg'
+
+Pic_sf[4] = 'images/phlmarriott-storefront_thumb.jpg'
+
+
+
+var Pic_cw = new Array()
+
+Pic_cw[0] = 'images/curtainwall_thumb.jpg'
+
+Pic_cw[1] = 'images/curtainwall1_thumb.jpg'
+
+Pic_cw[2] = 'images/curtainwall2_thumb.jpg'
+
+
+
+var Pic_sg = new Array()
+
+Pic_sg[0] = 'images/structural-facade_thumb.jpg'
+
+Pic_sg[1] = 'images/structural-facade2_thumb.jpg'
+
+Pic_sg[2] = 'images/15thjfk-structural_thumb.jpg'
+
+
+
+var Pic_bg = new Array()
+
+Pic_bg[0] = 'images/glass_partition1_thumb.jpg'
+
+Pic_bg[1] = 'images/glass_partition2_thumb.jpg'
+
+Pic_bg[2] = 'images/newcity-confroom_thumb.jpg'
+
+Pic_bg[3] = 'images/newcity-clerestory_thumb.jpg'
+
+Pic_bg[4] = 'images/newcity-platform_thumb.jpg'
+
+
+
+var Pic_special = new Array()
+
+Pic_special[0] = 'images/specialty1_thumb.jpg'
+
+Pic_special[1] = 'images/specialty2_thumb.jpg'
+
+Pic_special[2] = 'images/specialty3_thumb.jpg'
+
+Pic_special[3] = 'images/specialty4_thumb.jpg'
+
+Pic_special[4] = 'images/specialty5_thumb.jpg'
+
+
+
+var Pic_ge = new Array()
+
+Pic_ge[0] = 'images/glass_entrance1_thumb.jpg'
+
+Pic_ge[1] = 'images/glass_entrance2_thumb.jpg'
+
+Pic_ge[2] = 'images/glass_entrance3_thumb.jpg'
+
+Pic_ge[3] = 'images/newcity-confroom_thumb.jpg'
+
+Pic_ge[4] = 'images/phillymarriott-ge_thumb.jpg'
+
+
+
+var Pic_ce = new Array()
+
+Pic_ce[0] = 'images/customentrance_thumb.jpg'
+
+Pic_ce[1] = 'images/glass_entrance4_thumb.jpg'
+
+
+
+var Pic_sfe = new Array()
+
+Pic_sfe[0] = 'images/storefront-entrance_thumb.jpg'
+
+Pic_sfe[1] = 'images/virtua-entry-thumb.jpg'
+
+Pic_sfe[2] = 'images/storefront-entrance1_thumb.jpg'
+
+
+
+var Pic_skylight = new Array()
+
+Pic_skylight[0] = 'images/barrel-vault-interior_thumb.jpg'
+
+Pic_skylight[1] = 'images/virtua-skylight-thumb.jpg'
+
+Pic_skylight[2] = 'images/kalwall-silverside_thumb.jpg'
+
+Pic_skylight[3] = 'images/tdpelham-skylight_thumb.jpg'
+
+Pic_skylight[4] = 'images/skylight-1_thumb.jpg'
+
+
+
+var Pic_slider = new Array()
+
+Pic_slider[0] = 'images/slider1_thumb.jpg'
+
+Pic_slider[1] = 'images/slider2_thumb.jpg'
+
+Pic_slider[2] = 'images/slider3_thumb.jpg'
+
+
+
+var Pic_rails = new Array()
+
+Pic_rails[0] = 'images/glassrail1_thumb.jpg'
+
+Pic_rails[1] = 'images/glassrail2-thumb.jpg'
+
+Pic_rails[2] = 'images/glassrail3-thumb.jpg'
+
+Pic_rails[3] = 'images/glassrail4-thumb.jpg'
+
+
+
+var Pic_stainless = new Array()
+
+Pic_stainless[0] = 'images/sspanel1_thumb.jpg'
+
+Pic_stainless[1] = 'images/sspanel2_thumb.jpg'
+
+
+
+var Pic_misc = new Array()
+
+Pic_misc[0] = 'images/glassinsert_thumb.jpg'
+
+Pic_misc[1] = 'images/glassinsert2_thumb.jpg'
+
+Pic_misc[2] = 'images/muntins1_thumb.jpg'
+
+Pic_misc[3] = 'images/muntins2_thumb.jpg'
+
+Pic_misc[4] = 'images/muntins3_thumb.jpg'
+
+
+
+
+
+// =======================================
+
+// do not edit anything below this line
+
+// =======================================
+
+
+
+var t
+
+var j_sf = 0
+
+var sf = Pic_sf.length
+
+var preLoad_sf = new Array()
+
+for (i = 0; i < sf; i++){
+
+   preLoad_sf[i] = new Image()
+
+   preLoad_sf[i].src = Pic_sf[i]
+
+}
+
+
+
+var j_cw = 0
+
+var cw = Pic_cw.length
+
+var preLoad_cw = new Array()
+
+for (i = 0; i < cw; i++){
+
+   preLoad_cw[i] = new Image()
+
+   preLoad_cw[i].src = Pic_cw[i]
+
+}
+
+
+
+var j_sg = 0
+
+var sg = Pic_sg.length
+
+var preLoad_sg = new Array()
+
+for (i = 0; i < sg; i++){
+
+   preLoad_sg[i] = new Image()
+
+   preLoad_sg[i].src = Pic_sg[i]
+
+}
+
+
+
+var j_skylight = 0
+
+var skylight = Pic_skylight.length
+
+var preLoad_skylight = new Array()
+
+for (i = 0; i < skylight; i++){
+
+   preLoad_skylight[i] = new Image()
+
+   preLoad_skylight[i].src = Pic_skylight[i]
+
+}
+
+
+
+var j_bg = 0
+
+var bg = Pic_bg.length
+
+var preLoad_bg = new Array()
+
+for (i = 0; i < bg; i++){
+
+   preLoad_bg[i] = new Image()
+
+   preLoad_bg[i].src = Pic_bg[i]
+
+}
+
+
+
+var j_special = 0
+
+var special = Pic_special.length
+
+var preLoad_special = new Array()
+
+for (i = 0; i < special; i++){
+
+   preLoad_special[i] = new Image()
+
+   preLoad_special[i].src = Pic_special[i]
+
+}
+
+
+
+var j_ge = 0
+
+var ge = Pic_ge.length
+
+var preLoad_ge = new Array()
+
+for (i = 0; i < ge; i++){
+
+   preLoad_ge[i] = new Image()
+
+   preLoad_ge[i].src = Pic_ge[i]
+
+}
+
+
+
+
+
+var j_ce = 0
+
+var ce = Pic_ce.length
+
+var preLoad_ce = new Array()
+
+for (i = 0; i < ce; i++){
+
+   preLoad_ce[i] = new Image()
+
+   preLoad_ce[i].src = Pic_ce[i]
+
+}
+
+
+
+var j_sfe = 0
+
+var sfe = Pic_sfe.length
+
+var preLoad_sfe = new Array()
+
+for (i = 0; i < sfe; i++){
+
+   preLoad_sfe[i] = new Image()
+
+   preLoad_sfe[i].src = Pic_sfe[i]
+
+}
+
+
+
+var j_slider = 0
+
+var slider = Pic_slider.length
+
+var preLoad_slider = new Array()
+
+for (i = 0; i < slider; i++){
+
+   preLoad_slider[i] = new Image()
+
+   preLoad_slider[i].src = Pic_slider[i]
+
+}
+
+
+
+var j_rails = 0
+
+var rails = Pic_rails.length
+
+var preLoad_rails = new Array()
+
+for (i = 0; i < rails; i++){
+
+   preLoad_rails[i] = new Image()
+
+   preLoad_rails[i].src = Pic_rails[i]
+
+}
+
+
+
+var j_stainless = 0
+
+var stainless = Pic_stainless.length
+
+var preLoad_stainless = new Array()
+
+for (i = 0; i < stainless; i++){
+
+   preLoad_stainless[i] = new Image()
+
+   preLoad_stainless[i].src = Pic_stainless[i]
+
+}
+
+
+
+var j_misc = 0
+
+var misc = Pic_misc.length
+
+var preLoad_misc = new Array()
+
+for (i = 0; i < misc; i++){
+
+   preLoad_misc[i] = new Image()
+
+   preLoad_misc[i].src = Pic_misc[i]
+
+}
+
+
+
+function runSlides() {
+
+   runSlideShow()
+
+   runSlideShow_cw()
+
+   runSlideShow_sg()
+
+   runSlideShow_bg()
+
+   runSlideShow_special()
+
+   runSlideShow_ge()
+
+   runSlideShow_ce()
+
+   runSlideShow_sfe()
+
+   runSlideShow_slider()
+
+   runSlideShow_rails()
+
+   runSlideShow_stainless()
+
+   runSlideShow_skylight()
+
+   runSlideShow_misc()
+
+}
+
+
+
+function runSlideShow(){
+
+   document.images.SlideShow_sf.src = preLoad_sf[j_sf].src
+
+   j_sf = j_sf + 1
+
+   if (j_sf > (sf-1)) j_sf=0
+
+   t = setTimeout('runSlideShow()', speed)
+
+}
+
+
+
+function runSlideShow_cw(){
+
+   document.images.SlideShow_cw.src = preLoad_cw[j_cw].src
+
+   j_cw = j_cw + 1
+
+   if (j_cw > (cw-1)) j_cw=0
+
+   t = setTimeout('runSlideShow_cw()', speed2)
+
+}
+
+
+
+function runSlideShow_sg(){
+
+   document.images.SlideShow_sg.src = preLoad_sg[j_sg].src
+
+   j_sg = j_sg + 1
+
+   if (j_sg > (sg-1)) j_sg=0
+
+   t = setTimeout('runSlideShow_sg()', speed)
+
+}
+
+
+
+function runSlideShow_skylight(){
+
+   document.images.SlideShow_skylight.src = preLoad_skylight[j_skylight].src
+
+   j_skylight = j_skylight + 1
+
+   if (j_skylight > (skylight-1)) skylight=0
+
+   t = setTimeout('runSlideShow_skylight()', speed2)
+
+}
+
+
+
+function runSlideShow_bg(){
+
+   document.images.SlideShow_bg.src = preLoad_bg[j_bg].src
+
+   j_bg = j_bg + 1
+
+   if (j_bg > (bg-1)) j_bg=0
+
+   t = setTimeout('runSlideShow_bg()', speed2)
+
+}
+
+
+
+function runSlideShow_special(){
+
+   document.images.SlideShow_special.src = preLoad_special[j_special].src
+
+   j_special = j_special + 1
+
+   if (j_special > (special-1)) j_special=0
+
+   t = setTimeout('runSlideShow_special()', speed)
+
+}
+
+
+
+function runSlideShow_ge(){
+
+   document.images.SlideShow_ge.src = preLoad_ge[j_ge].src
+
+   j_ge = j_ge + 1
+
+   if (j_ge > (ge-1)) j_ge=0
+
+   t = setTimeout('runSlideShow_ge()', speed2)
+
+}
+
+
+
+function runSlideShow_ce(){
+
+   document.images.SlideShow_ce.src = preLoad_ce[j_ce].src
+
+   j_ce = j_ce + 1
+
+   if (j_ce > (ce-1)) j_ce=0
+
+   t = setTimeout('runSlideShow_ce()', speed)
+
+}
+
+
+
+function runSlideShow_sfe(){
+
+   document.images.SlideShow_sfe.src = preLoad_sfe[j_sfe].src
+
+   j_sfe = j_sfe + 1
+
+   if (j_sfe > (sfe-1)) j_sfe=0
+
+   t = setTimeout('runSlideShow_sfe()', speed2)
+
+}
+
+
+
+function runSlideShow_slider(){
+
+   document.images.SlideShow_slider.src = preLoad_slider[j_slider].src
+
+   j_slider = j_slider + 1
+
+   if (j_slider > (slider-1)) j_slider=0
+
+   t = setTimeout('runSlideShow_slider()', speed)
+
+}
+
+
+
+function runSlideShow_rails(){
+
+   document.images.SlideShow_rails.src = preLoad_rails[j_rails].src
+
+   j_rails = j_rails + 1
+
+   if (j_rails > (rails-1)) j_rails=0
+
+   t = setTimeout('runSlideShow_rails()', speed2)
+
+}
+
+
+
+function runSlideShow_stainless(){
+
+   document.images.SlideShow_stainless.src = preLoad_stainless[j_stainless].src
+
+   j_stainless = j_stainless + 1
+
+   if (j_stainless > (stainless-1)) j_stainless=0
+
+   t = setTimeout('runSlideShow_stainless()', speed)
+
+}
+
+
+
+function runSlideShow_misc(){
+
+   document.images.SlideShow_misc.src = preLoad_misc[j_misc].src
+
+   j_misc = j_misc + 1
+
+   if (j_misc > (misc-1)) j_misc=0
+
+   t = setTimeout('runSlideShow_misc()', speed2)
+
+}
+
+
+
+</script>
+
+
+
+
+
+<meta name="keywords" content="Philadelphia Glass Contractor, architectural aluminum and glass contractor,  Philadelphia Glazing Contractor, Philadelphia Glass & Glazing, Pennsylvania Glass, Pennsylvania Glazing, Philadelphia Glass, Philadelphia Glazing, Delaware Valley Glaziers, Delaware Valley Glass Contractor, New Jersey Glazing, New Jersey Glass, Delaware Glass, Delaware Glazing, Glazing Contractor, Commercial Glazing Contractor, Eureka Metal &amp; Glass, Eureka Glassworks,  Butt Glazing, Glass Partitions, skylights, Storefronts, Curtainwall, Guard Rails, Stair Rails, Structural Glazing, Mirrors, Glass Entrances, Glass Doors, Aluminum Windows, Aluminum Sliders, Glass Sliders, architectural glass, architectural glazing, architectural aluminum, glass & glazing contractor, shower glass, shower doors, 24 hour emergency service, Aluminum door frame, Aluminum door handles, Aluminum exterior door, Aluminum exterior doors, Aluminum front doors, Aluminum glass doors, Aluminum interior doors, Aluminum sliding doors, Annealed glass, Commercial ,
+
+ Commercial doors, Commercial door closer, Commercial door hardware, Commercial door repair, Commercial exterior doors, Commercial storefronts, Commercial window tinting, Custom aluminum doors, Commercial entranceways, Commercial glass, Commercial glass doors,		Decorative tinting, Decorative window tinted film, Glass door repair, Glass repair new jersey, Installing skylights, Philadelphia door repair, Replacement glass, 	Replacement parts doors, Replacement skylights, Skylight repair, Tempered glass, Tempered glass windows, Window tinting, Door closers, Door hardware, Door installation, 		Door repair, Door repair and  replacement, Door replacement parts, Double-pane, Entranceways, 		Exit hardware, Glass doors, Glass installation, Glass repair, Glass repair Philadelphia, Glass repair NJ, 		Glass repair services, Glass replacement, Hollow metal doors, Insulated glass, Interior mirror design, Laminated glass, Mirror glass replacement, New Jersey Door Repair, Overhead concealed closer, PA NJ DE, Panic hardware, Pennsylvania, Philadelphia, Revolving door service, 	Revolving doors, Revolving door sales and service, Safety & security window films, Safety film, Same day door repairs, Same day glass replacements, Same day service, 		Solar clear heat-control window film, Solar window film , Solar window tinting, South Jersey, Spandrel glass, Specialty glass, Stainless steel doors, Storefronts, Surface mounted closer, Tempered glass entranceways, Tempered safety glass, Window film, Window solar film, Window tinting New Jersey, Window tinting Pennsylvania, Wood frame doors"><meta name="description" content="Eureka Metal & Glass, Quality Architectural Glass & Metal Installations in the Metro Philadelphia Region">
+
+ <link REL="SHORTCUT ICON" HREF="http://www.eurekaglass.com/favicon.ico">
+
+</head>
+
+<body onLoad="runSlides()">
+
+<table width="85%" align="center">
+
+  <tr> 
+
+    <td colspan="3" align="center"><font size="+2"><strong>Products 
+
+      &amp; Services</strong></font> <hr color="#3366cc" size="2"></td>
+
+  </tr>
+
+  <tr> 
+
+    <td colspan="3"><div align="center"><a href="#storefronts">Storefronts</a> 
+
+        &#8226; <a href="#curtainwall">Curtainwall</a> &#8226; <a href="#structural">Structural 
+
+        Glazing</a> &#8226; <a href="#skylights">Skylighting Systems</a> &#8226; <a href="#buttglazing">Butt Glazed Partitions</a> 
+
+        &#8226; <a href="#specialty">Specialty Glass &amp; Acrylics</a><br>
+
+        <a href="#allglassentry">All Glass Entrances</a> &#8226; <a href="#customglassentry">Custom 
+
+        Glass Entrances</a> &#8226; <a href="#aluminumentry">Aluminum Swing Entrances</a> &#8226; <a href="#sliders"> 
+
+        Sliding Entrances</a><br>
+
+        <a href="#glassrails">Glass Stair &amp; Guard Rails</a> &#8226; <a href="#stainless">Stainless 
+
+        Steel Paneling</a> &#8226; <a href="#miscellaneous">Miscellaneous</a> 
+
+        &#8226; <a href="#services">Services</a><a href="#services"></a> &#8226; 
+
+        <a href="#products">Products</a></div></td>
+
+  </tr>
+
+<tr><td colspan="3"><hr color="#3366cc" size="2"></td></tr>
+
+  <tr> 
+
+    <td colspan="2" rowspan="1"><table width="100%" align="left" >
+
+        <td width="170" align="left"><font size="+2"><strong><em><a name="products">PRODUCTS</a></em></strong></font></td>
+
+        <td><em><strong>Below is just a brief list of the many products we can 
+
+          furnish and install... </strong></em></td>
+
+      </table></td>
+
+	  <td width="160" rowspan="27" valign="top" align="center"><p><font size="+1">Common<br>
+
+	  Product Lines</font></p>
+
+	    <p><img src="images/brands/agc.jpg" width="91" height="40" alt="AGC Flat Glass"></p>
+
+	    <p><img src="images/brands/guardiansunguard.jpg" width="189" height="31" alt="Guardian SunGaurd"></p>
+
+	    <p><img src="images/brands/pilkington.jpg" width="81" height="42" alt="Pilkington"></p>
+
+	    <p><img src="images/brands/ppg.jpg" width="45" height="40" alt="PPG"></p>
+
+	    <p><img src="images/brands/schottlogo.jpg" width="82" height="40" alt="Schott"></p>
+
+	    <p><img src="images/brands/sentryglas.jpg" width="80" height="40" alt="Dupont SentryGlas"></p>
+
+	    <p><img src="images/brands/viracon.jpg" width="86" height="40" alt="Viracon"></p>
+
+		<hr width="70%" size="2">
+
+	    <p><img src="images/brands/aluflam.jpg" width="174" height="40" alt="AluFlam"></p>
+
+	    <p><img src="images/brands/safti-first.jpg" width="187" height="33" alt="SaftiFirst"></p>
+
+	    <p><img src="images/brands/tgp.jpg" width="156" height="44" alt="Technical Glass Products"></p>
+
+		<p><img src="images/brands/vetrotech.jpg" width="178" height="85" alt="Vetrotech Saint Gobain"></p>
+
+	    <hr width="70%" size="2">
+
+		<p><img src="images/brands/efco.jpg" width="62" height="70" alt="EFCO"></p>
+
+	    <p><img src="images/brands/leed_himmel.jpg" width="102" height="61"></p>
+
+		<p><img src="images/brands/Kawneer.jpg" width="146" height="45" alt="Kawneer"></p>
+
+	    <p><img src="images/brands/schuco.jpg" width="140" height="40" alt="Schuco"></p>
+
+	    <p><img src="images/brands/unicel.jpg" width="147" height="73" alt="Unicel"></p>
+
+	    <p><img src="images/brands/vistawall.jpg" width="157" height="35" alt="Vistawall"></p>
+
+	    <p><img src="images/brands/ykkap.jpg" width="79" height="40" alt="YKK"></p>
+
+	    <hr width="70%" size="2">
+
+		<p><img src="images/brands/kalwall.jpg" width="152" height="43" alt="Kalwall"></p>
+
+		<p><img src="images/brands/naturalite.jpg" width="170" height="42" alt="Naturalite"></p>
+
+		<p><img src="images/brands/supersky.jpg" width="128" height="100" alt="Supersky"></p>
+
+	    <p><img src="images/brands/wasco.jpg" width="106" height="80" alt="Wasco"></p>
+
+	    <hr width="70%" size="2">		<p><img src="images/brands/crlaurence.jpg" width="100" height="59" alt="C.R. Laurence"></p>
+
+	    <p><img src="images/brands/juliusblum.jpg" width="120" height="50" alt="Julius Blum"></p>
+
+	    <p><img src="images/brands/liversbronze.jpg" width="105" height="80" alt="Livers Bronze Co."></p>
+
+	    <p><img src="images/brands/viva.jpg" width="95" height="80" alt="Viva Railings"></p>
+
+	    <hr width="70%" size="2">
+
+		<p><img src="images/brands/blumcraft.jpg" width="200" height="43" alt="Blumcraft"></p>
+
+		<p><img src="images/brands/Dorma.jpg" width="122" height="80" alt="Dorma"></p>
+
+		<p><img src="images/brands/forms&surfaces.jpg" width="206" height="59" alt="Forms &amp; Surfaces"></p>
+
+		<p><img src="images/brands/rockwood.jpg" width="150" height="49" alt="Rockwood"></p>
+
+		<hr width="70%" size="2">
+
+		<p><img src="images/brands/3m.jpg" width="74" height="48" alt="3M Window Films"></p>
+
+		<p><img src="images/brands/llumar.jpg" width="113" height="64" alt="Llumar Window Films"></p>
+
+		<hr width="70%" size="2">
+
+        <p><img src="images/brands/3form.jpg" width="86" height="45" alt="3-Form"></p>
+
+        <p><img src="images/brands/actionbullet.jpg" width="160" height="51" alt="ActionBullet"></p>
+
+		<p><img src="images/brands/armortex.jpg" width="170" height="20" alt="Armortex"></p>
+
+		<p><img src="images/brands/fryreglet.jpg" width="175" height="53" alt="Fry Reglet"></p>
+
+		<p><img src="images/brands/marshield.jpg" width="119" height="64" alt="Marshield"></p>
+
+		<p><img src="images/brands/switchlite.jpg" width="90" height="90" alt="Switchlite"></p></td>
+
+  </tr>
+
+  <tr><td colspan="2" rowspan="1">
+
+<hr color="#3366cc" size="2"></td></tr>
+
+  <tr> 
+
+    <td width="180" height="150" align="center" valign="top"><img src="1.jpg" name='SlideShow_sf' width=140 alt="Storefronts" border="0" align="top"><br>
+
+      <br>
+
+	</td>
+
+    <td width="620" height="150" align="justify" valign="top" > 
+
+      <ul>
+
+        <li><font size="+1"><a name="storefronts">Storefronts</a></font> 
+
+          <blockquote>
+
+            <p>We furnish &amp; install several manufacturer's standard storefronts 
+
+              in typical anodized finishes, custom paints, and custom cladding. 
+
+              Storefronts can be utilized in several applications, with standard 
+
+              parts and finishes available for installation within 5-6 weeks*</p>
+
+          </blockquote>
+
+        </li>
+
+      </ul></td>
+
+  </tr>
+
+  <tr>
+
+    <td colspan="2">
+
+<hr color="#3366cc" size="2"></td></tr>
+
+  <tr> 
+
+    <td width="180" height="205" align="center" valign="top"><img src="1.jpg" name='SlideShow_cw' width=140 alt="Curtainwall" border="0" align="top"></td>
+
+
+
+    <td width="620" height="205" align="justify" valign="top" > 
+
+      <ul>
+
+        <li><font size="+1"><a name="curtainwall">Curtainwall</a></font> 
+
+          <blockquote>
+
+            <p>In addition to storefront, we also furnish &amp; install several 
+
+              manufacturer's standard curtainwalls in typical anodized finishes 
+
+              and custom paints, or with custom cladding. Curtain walls differ 
+
+              from storefront systems in that they are designed to span multiple 
+
+              floors, and take into consideration design requirements such as: 
+
+              thermal expansion and contraction; building sway and movement; water 
+
+              diversion; and thermal efficiency for cost-effective heating, cooling, 
+
+              and lighting in the building. Standard parts and finishes are usually 
+
+              available for installation within 6-10 weeks*</p>
+
+          </blockquote>
+
+        </li>
+
+      </ul></td>
+
+  </tr>
+
+  <tr>
+
+    <td colspan="2">
+
+<hr color="#3366cc" size="2"></td></tr>
+
+  <tr> 
+
+    <td width="180" height="285" align="center" valign="top"><img src="1.jpg" name='SlideShow_sg' width=140 alt="Structural Glazing" border="0" align="top"></td>
+
+    <td width="620" height="285" align="justify" valign="top" > 
+
+      <ul>
+
+        <li><font size="+1"><a name="structural">Structural Glazing</a></font> 
+
+          <blockquote>
+
+            <p>Besides standard glazed openings, Eureka can also furnish &amp; 
+
+              install custom structural glazing ranging from exterior butt glazed 
+
+              systems to stacked glass, utilizing dot supports, spider fittings, 
+
+              and/or structural glass fins. Most of our suppliers can furnish 
+
+              glass as large as 60 square feet (up to 8 feet along one dimension). 
+
+              Larger glass lites are available but have a much longer lead time 
+
+              from the fabricators. </p>
+
+          </blockquote>
+
+        </li>
+
+      </ul></td>
+
+  </tr>
+
+  <tr>
+
+    <td colspan="2">
+
+<hr color="#3366cc" size="2"></td></tr>
+
+  <tr> 
+
+    <td width="180" height="115" align="center" valign="top"><img src="1.jpg" name='SlideShow_skylight' width=140 alt="Skylights" border="0" align="top"></td>
+
+    <td width="620" height="115" align="justify" valign="top"> 
+
+      <ul>
+
+        <li><font size="+1"><a name="skylights">Skylighting Systems</a></font> 
+
+          <br>
+
+          <ul>
+
+            <li>Glass, polycarbonate, and acrylic skylights</li>
+
+            <li>Fixed &amp; Ventilating</li>
+
+            <li>Sloped Glazing</li>
+
+            <li>Vaulted, Domed, Pyramid, Polygon, and Flat Skylights</li>
+
+			<li>Custom Metal Framed Skylights</li>
+
+            <li>Installation experience with Kalwall, Naturalite, Solar Innovations, Supersky, and more!</li>
+
+          </ul>
+
+        </li>
+
+      </ul></td>
+
+  </tr>
+
+  <tr>
+
+    <td colspan="2">
+
+<hr color="#3366cc" size="2"></td></tr>
+
+  <tr> 
+
+    <td width="180" height="115" align="center" valign="top"><img src="1.jpg" name='SlideShow_bg' width=140 alt="Butt Glazing" border="0" align="top"></td>
+
+    <td width="620" height="115" align="justify" valign="top"> 
+
+      <ul>
+
+        <li><font size="+1"><a name="buttglazing">Butt Glazed Partitions</a></font> 
+
+          <blockquote>
+
+            <p>Butt glazed partitions utilizing 1/4&quot;, 3/8&quot;, 1/2&quot;, 
+
+              and 3/4&quot; glass are also available. Glass can be set in your 
+
+              wooden or hollow metal frames, or we can furnish top &amp; bottom 
+
+              aluminum channels.</p>
+
+          </blockquote>
+
+        </li>
+
+      </ul></td>
+
+  </tr>
+
+  <tr>
+
+    <td colspan="2">
+
+<hr color="#3366cc" size="2"></td></tr>
+
+  <tr> 
+
+    <td width="180" height="185" align="center" valign="top"><img src="1.jpg" name='SlideShow_special' width=140 alt="Specialty Glass &amp; Acrylics" border="0" align="top"></td>
+
+    <td width="620" height="185" align="justify" valign="top"> 
+
+      <ul>
+
+        <li><font size="+1"><a name="specialty">Specialty Glass & Acrylics</a></font> 
+
+          <br>
+
+          <ul>
+
+            <li> Decorative Art Glass (Bendheim, McGrory, Rudy Art Glass)</li>
+
+            <li>Acrylic Panels (3-Form, Fry Reglet)</li>
+
+            <li>Fire-Rated Glass (Wire Glass, TGP)</li>
+
+            <li>Laminated Glass (Vanceva)</li>
+
+            <li>Photo/Art Embedded Glass</li>
+
+            <li>Filmed Glass</li>
+
+            <li>Lead-Lined Glass</li>
+
+            <li>Integral Blind Units (Unicel Architectural, Kyler Industries)</li>
+
+          </ul>
+
+        </li>
+
+      </ul></td>
+
+  </tr>
+
+  <tr>
+
+    <td colspan="2">
+
+<hr color="#3366cc" size="2"></td></tr>
+
+  <tr> 
+
+    <td width="180" height="215" align="center" valign="top"><img src="1.jpg" name='SlideShow_ge' width=140 alt="All Glass Entrances" border="0" align="top"></td>
+
+    <td width="620" height="215" align="justify" valign="top"> 
+
+      <ul>
+
+        <li><font size="+1"><a name="allglassentry">All Glass Entrances</a></font> 
+
+          <blockquote>
+
+            <p>Transom &amp; Transomless Clear Tempered Frameless Glass Doors 
+
+              are configurable with:</p>
+
+            <ul>
+
+              <li>Top &amp; Bottom Patch Fittings</li>
+
+              <li>Top &amp; Bottom 3-3/8&quot;, 4&quot;, &amp; 6&quot; Rails</li>
+
+              <li>Concealed Overhead Closers or Floor Closers</li>
+
+              <li>Concealed Overhead Maglocks or Surface Applied Maglocks**</li>
+
+              <li>Custom Push/Pulls and Pull/Pulls</li>
+
+              <li>Structural Glass Fins</li>
+
+            </ul>
+
+          </blockquote>
+
+        </li>
+
+      </ul></td>
+
+  </tr>
+
+  <tr>
+
+    <td colspan="2">
+
+<hr color="#3366cc" size="2"></td></tr>
+
+  <tr> 
+
+    <td width="180" height="205" align="center" valign="top"><img src="1.jpg" name='SlideShow_ce' width=140 alt="Custom Glass Entrances" border="0" align="top"></td>
+
+    <td width="620" height="205" align="justify" valign="top"> 
+
+      <ul>
+
+        <li><font size="+1"><a name="customglassentry">Custom Glass Entrances</a></font> 
+
+          <blockquote>
+
+            <p>In addition to standard glass entrances, Eureka is experienced 
+
+              in assisting with taking custom glass entrances from conceptual 
+
+              design through engineering to final production and installation. 
+
+              Previous projects included:</p>
+
+            <ul>
+
+              <li>Custom storefront doors up to 10' tall</li>
+
+              <li>Custom shaped glass doors</li>
+
+              <li>Top hung, trackless all-glass sliders</li>
+
+              <li>Roller &amp; track assembly glass sliders</li>
+
+            </ul>
+
+          </blockquote>
+
+        </li>
+
+      </ul></td>
+
+  </tr>
+
+  <tr>
+
+    <td colspan="2">
+
+<hr color="#3366cc" size="2"></td></tr>
+
+  <tr> 
+
+    <td width="180" height="145" align="center" valign="top"><img src="1.jpg" name='SlideShow_sfe' width=140 alt="Aluminum Swing Entrances" border="0" align="top"></td>    
+
+    <td width="620" height="145" align="justify" valign="top" > 
+
+      <ul>
+
+        <li><font size="+1"><a name="aluminumentry">Aluminum Swing Entrances</a></font> 
+
+          <ul>
+
+            <br>
+
+            <li>Narrow, medium, and wide stile aluminum swing doors for 1/4&quot; 
+
+              glass and 1&quot; glass units</li>
+
+            <li>Impact resistant aluminum swing doors</li>
+
+          </ul>
+
+        </li>
+
+      </ul></td>
+
+  </tr>
+
+  <tr>
+
+    <td colspan="2">
+
+<hr color="#3366cc" size="2"></td></tr>
+
+  <tr> 
+
+    <td width="180" height="170" align="center" valign="top"><img src="1.jpg" name='SlideShow_slider' width=140 alt="Sliding Entrances" border="0" align="top"></td>
+
+    <td width="620" height="170" align="justify" valign="top" > 
+
+      <ul>
+
+        <li><font size="+1"><a name="sliders">Sliding Entrances</a></font> 
+
+          <ul>
+
+            <br>
+
+            <li>Aluminum framed sliders</li>
+
+            <li>Showroom sliders</li>
+
+            <li>Automatic sliders</li>
+
+          </ul>
+
+        </li>
+
+      </ul></td>
+
+  </tr>  
+
+  <tr>
+
+    <td colspan="2">
+
+<hr color="#3366cc" size="2"></td></tr>
+
+  <tr> 
+
+    <td width="180" height="200" align="center" valign="top"><img src="1.jpg" name='SlideShow_rails' width=140 alt="Glass Stair &amp; Guard Rails" border="0" align="top"></td>
+
+    <td width="620" height="200" align="justify" valign="top"> 
+
+      <ul>
+
+        <li><font size="+1"><a name="glassrails">Glass Stair & Guard Rails</a></font> 
+
+          <ul>
+
+            <br>
+
+            <li>Glass Railings with Offset Handrails</li>
+
+            <li>Glass Railings with Cap Rails</li>
+
+            <li>Glass Railings with Stainless Steel Cladding for stringers &amp; 
+
+              slab edge supports</li>
+
+          </ul>
+
+        </li>
+
+      </ul></td>
+
+  </tr>
+
+  <tr>
+
+    <td colspan="2">
+
+<hr color="#3366cc" size="2"></td></tr>
+
+  <tr> 
+
+    <td width="180" height="205" align="center" valign="top"><img src="1.jpg" name='SlideShow_stainless' width=140 alt="Stainless Steel Paneling" border="0" align="top"></td>
+
+    <td width="620" height="205" align="justify" valign="top"> 
+
+      <ul>
+
+        <li><font size="+1"><a name="stainless">Stainless Steel Paneling</a></font> 
+
+          <br>
+
+          <ul>
+
+            <li>Wall Paneling</li>
+
+            <li>Column Covers</li>
+
+            <li>Stair Stringers</li>
+
+            <li>Convector Covers</li>
+
+            <li>Signbands</li>
+
+          </ul>
+
+        </li>
+
+      </ul></td>
+
+  </tr>
+
+  <tr>
+
+    <td colspan="2">
+
+<hr color="#3366cc" size="2"></td></tr>
+
+  <tr> 
+
+    <td width="180" height="205" align="center" valign="top"><img src="1.jpg" name='SlideShow_misc' width=140 alt="Miscellaneous" border="0" align="top"></td>
+
+    <td width="620" height="205" align="justify" valign="top"> 
+
+      <ul>
+
+        <li><font size="+1"><a name="miscellaneous">Miscellaneous</a></font> 
+
+          <ul>
+
+            <br>
+
+            <li>Glass Canopies</li>
+
+            <li>Glass Flooring</li>
+
+            <li>Glass Tabletop Inserts</li>
+
+            <li>Custom Mirrors</li>
+
+            <li>Glass Display Cases &amp; Shelf Assemblies</li>
+
+            <li>Aluminum Muntins</li>
+
+            <li>Aluminum Sunshades</li>
+
+          </ul>
+
+        </li>
+
+      </ul></td>
+
+  </tr>
+
+  <tr> 
+
+    <td colspan="3"><blockquote> 
+
+        <blockquote> 
+
+          <blockquote> 
+
+            <p><em>*Manufacturer's lead times vary throughout the year. Please 
+
+              check with your Client representative or Project Manager for an 
+
+              accurate estimate of material lead times.</em></p>
+
+            <p><em>**Eureka can furnish some security hardware, but generally 
+
+              does not perform electrical or security hookups.</em></p>
+
+          </blockquote>
+
+        </blockquote>
+
+      </blockquote></td>
+
+  </tr>
+
+  <tr> 
+
+    <td colspan="3"> <hr color="#3366cc" size="2"> <table width="100%" align="left" >
+
+        <td width="180" align="left"><font size="+2"><strong><em><a name="services">SERVICES</a></em></strong></font></td>
+
+        <td><em><strong>Some of the services we can provide... </strong></em></td>
+
+      </table></td>
+
+  </tr>
+
+  <tr> 
+
+    <td width="180" align="center">&nbsp;</td>
+
+    <td align="justify" colspan="2"><ul>
+
+        <li>Glass Replacement</li>
+
+        <li>Storefront &amp; All Glass Door Service</li>
+
+        <li>Glass Filming</li>
+
+        <li>Value Engineering</li>
+
+        <li>Shop Drawings</li>
+
+        <li><a href="ipd-eureka.htm" target="_parent" onClick="trackIPD();">Integrated Project Delivery</a></li>
+
+    </ul></td>
+
+  </tr>
+
+  <tr> 
+
+    <td colspan="3"><hr color="#3366cc" size="2"><div align="center"><a href="#storefronts">Storefronts</a> 
+
+        &#8226; <a href="#curtainwall">Curtainwall</a> &#8226; <a href="#structural">Structural 
+
+        Glazing</a> &#8226; <a href="#skylights">Skylighting Systems</a> &#8226; <a href="#buttglazing">Butt Glazed Partitions</a> 
+
+        &#8226; <a href="#specialty">Specialty Glass &amp; Acrylics</a><br>
+
+        <a href="#allglassentry">All Glass Entrances</a> &#8226; <a href="#customglassentry">Custom 
+
+        Glass Entrances</a> &#8226; <a href="#aluminumentry">Aluminum Swing Entrances</a> &#8226; <a href="#sliders"> 
+
+        Sliding Entrances</a><br>
+
+        <a href="#glassrails">Glass Stair &amp; Guard Rails</a> &#8226; <a href="#stainless">Stainless 
+
+        Steel Paneling</a> &#8226; <a href="#miscellaneous">Miscellaneous</a> 
+
+        &#8226; <a href="#services">Services</a><a href="#services"></a> &#8226; 
+
+        <a href="#products">Products</a></div></td>
+
+  </tr>
+
+</table>
+
+<br>
+
+<table width="100%" bgcolor="#3366cc" align="center"><tr><td align="center" height="50"><font color="#ffffff"><font color="#FFFFFF"><br>
+
+        <a href="profile.htm" class="white" target="_self">Profile</a> &#8212; <a href="products.htm" class="white" target="_self">Products &amp; Services</a> &#8212; <a href="projects.htm" class="white" target="_self">Project
+
+        Portfolio</a> &#8212; <a href="commitment.htm" class="white" target="_self">Commitment</a> 
+
+      &#8212; <a href="history.htm"  class="white" target="_self">History</a> &#8212; <a href="opportunities.htm" class="white" target="_self">Opportunities</a> &#8212; <a href="directory.htm" class="white" target="_self">Our
+
+         Diverse Team</a> &#8212; <a href="location.htm" class="white" target="_self">Location</a> &#8212; <a href="newsletter-archive.htm" class="white" target="_self">EMGS
+
+         Newsletter</a> &#8212; <a href="sitemap.htm" class="white" target="_self">Site
+
+          Map</a></font>      <hr noshade width="100%" size="2" color="#FFFFFF"><strong><SCRIPT LANGUAGE="JavaScript">
+
+<!--
+
+    today=new Date();
+
+    y0=today.getFullYear();
+
+
+
+  // end hiding --->
+
+</SCRIPT>
+
+
+
+Copyright &copy; <SCRIPT LANGUAGE="JavaScript">
+
+  <!--- Hide from old browsers
+
+    document.write(y0);
+
+  // end hiding --->
+
+</SCRIPT> <a class="white" target=_top href="http://www.eurekaglass.com/">Eureka Metal &amp; Glass Services, Inc.</a></strong></font></td></tr></table>
+
+</body>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21003337-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  
+function trackIPD() 
+{
+	_gaq.push(['_trackEvent', 'Design-Build Interest', 'Integrated Product Delivery', 'Integrated Product Delivery']); 
+}
+
+
+</script>
+
+</html>
+

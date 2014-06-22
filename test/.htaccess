@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "test"
+AuthUserFile "/home/eureka12/.htpasswds/public_html/test/passwd"
+require valid-user
